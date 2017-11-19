@@ -1,0 +1,25 @@
+{
+  "name": "messageformat-yaml-loader",
+  "version": "0.0.1",
+  "description": "Webpack loader for YAML files (e.g. Rails i18n)",
+  "keywords": [
+    "messageformat",
+    "yaml",
+    "rails",
+    "ruby",
+    "i18n",
+    "webpack"
+  ],
+  "main": "index.js",
+  "repository": "https://github.com/eemeli/messageformat-yaml-loader",
+  "author": "Eemeli Aro <eemeli@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0"
+  },
+  "dependencies": {
+    "yaml-to-messageformat": "^0.1.0",
+    "loader-utils": "^1.1.0",
+    "messageformat": "^1.1.0"
+  }
+}
