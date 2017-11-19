@@ -1,0 +1,17 @@
+{
+  "name": "messageformat-yaml-loader-example",
+  "version": "0.1.0",
+  "description": "Minimal example for messageformat-yaml-loader",
+  "scripts": {
+    "build": "webpack",
+    "prepare": "npm run build"
+  },
+  "main": "src/index.js",
+  "repository": "https://github.com/eemeli/messageformat-yaml-loader",
+  "author": "Eemeli Aro <eemeli@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "messageformat-yaml-loader": "file:../",
+    "webpack": "^3.8.1"
+  }
+}
