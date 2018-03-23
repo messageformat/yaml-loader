@@ -1,14 +1,16 @@
-import messages from './messages.yml'
-const { format, messages: errors } = messages.en.errors
+import msgData from './messages.yml'
+import MessageFormat from 'messageformat/lib/get'
+const messages = new MessageFormat(msgData)
 
 function component() {
   const element = document.createElement('div')
-  element.innerHTML = format({
+  const message = messages.get(['errors', 'messages', 'wrong_length'], { count: 42 })
+  element.innerHTML = messages.get(['errors', 'format'], {
     attribute: 'Your message',
-    message: errors.wrong_length({ count: 42 })
+    message
   })
   return element
 }
 
-console.log('messages', messages)
+console.log('messages', messages.get([]))
 document.body.appendChild(component())
