@@ -5,6 +5,7 @@
   "description": "Minimal example for messageformat-yaml-loader",
   "scripts": {
     "build": "webpack",
+    "install": "npm install --no-save ../",
     "prepare": "npm run build"
   },
   "main": "src/index.js",
@@ -12,10 +13,13 @@
   "author": "Eemeli Aro <eemeli@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "messageformat-yaml-loader": "^0.2.0",
-    "webpack": "^3.8.1"
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0"
   },
   "dependencies": {
-    "messageformat": "^2.0.0-beta.4"
+    "messageformat": "^2.0.3"
+  },
+  "peerDependencies": {
+    "messageformat-yaml-loader": "*"
   }
 }

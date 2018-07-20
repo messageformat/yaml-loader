@@ -19,9 +19,12 @@
   },
   "dependencies": {
     "loader-utils": "^1.1.0",
-    "yaml-to-messageformat": "^0.1.0"
+    "yaml-to-messageformat": "^0.2.0"
   },
   "peerDependencies": {
     "messageformat": "1.x | 2.x"
+  },
+  "devDependencies": {
+    "messageformat": "^2.0.3"
   }
 }

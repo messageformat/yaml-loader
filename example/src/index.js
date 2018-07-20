@@ -1,6 +1,6 @@
 import msgData from './messages.yml'
-import MessageFormat from 'messageformat/lib/get'
-const messages = new MessageFormat(msgData)
+import Messages from 'messageformat/messages'
+const messages = new Messages(msgData)
 
 function component() {
   const element = document.createElement('div')
